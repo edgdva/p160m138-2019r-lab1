@@ -1,8 +1,8 @@
 import sys  # importiname nuskaitymo biblioteka
 
 
-def greet(name: str):  # funkcija is uzduoties
-    return f"Hello, {name}!"  # vis dar ji
+def greet(greeted_name: str):  # funkcija is uzduoties
+    return f"Hello, {greeted_name}!"  # vis dar ji
 
 
 if __name__ == "__main__":  # perduodame i argumenta kintamaji
