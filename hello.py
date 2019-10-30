@@ -1,8 +1,8 @@
-print("Hello, everyone!")
 import sys
 
-def greet(name: str):
- return f"Hello, {name}!"
+def greet(greeted_name: str, shout_count: int = 1):
+    return f"Hello, {greeted_name}{shout_count * '!'}"
 
 if __name__ == "__main__":
-    print(greet(sys.argv[1]))
+    n = int(sys.argv[2]) if len(sys.argv) == 3 else 1
+    print(greet(sys.argv[1], n))
